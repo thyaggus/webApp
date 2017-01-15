@@ -1,0 +1,147 @@
+/**************   GRID   **************/
+* {
+  box-sizing: border-box;
+  padding-right: 2px;
+  padding-bottom: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    position: relative;
+}
+
+.col-1 {width: 6.86666666667%;}
+.col-2 {width: 15.3333333333%;}
+.col-3 {width: 23.8%;}
+.col-4 {width: 32.2666666667%;}
+.col-5 {width: 40.7333333333%;}
+.col-6 {width: 49.2%;}
+.col-7 {width: 57.6666666667%;}
+.col-8 {width: 66.1333333333%;}
+.col-9 {width: 74.6%;}
+.col-10 {width: 83.0666666667%;}
+.col-11 {width: 91.5333333333%;}
+.col-12 {width: 100%;}
+
+.push-1 {left: 6.86666666667%;}
+.push-2 {left: 15.3333333333%;}
+.push-3 {left: 23.8%;}
+.push-4 {left: 32.2666666667%;}
+.push-5 {left: 40.7333333333%;}
+.push-6 {left: 49.2%;}
+.push-7 {left: 57.6666666667%;}
+.push-8 {left: 66.1333333333%;}
+.push-9 {left: 74.6%;}
+.push-10 {left: 83.0666666667%;}
+.push-11 {left: 91.5333333333%;}
+.push-12 {left: 100%;}
+
+/*@media only screen and (max-width: 550px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: auto;
+    float: none;
+  }
+}*/
+    
+/**************************************/
+
+/*********    FULLSCREEN    ***********/
+selector:-webkit-full-screen {
+    display: block;
+}
+
+selector:-moz-full-screen {
+    display: block;
+}
+
+selector {
+    display: none; 
+}
+
+@media (display-mode: fullscreen) {
+
+}
+/**************************************/
+
+
+.cabecalho {
+    background: #2F95A9;
+    border: 2px solid #2F95A9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.textoCabecalho {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #B2B2B2;
+    text-align: center;
+}
+
+.nome {
+    color: #2F95A9;
+    display: block;
+    margin-left: 1em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: #20211E;
+    /*background-color: #BBBBBB;*/
+}
+
+.cor {
+    background: #20211E;
+    color: #2F95A9;
+}
+
+.botao a {
+    color: #bbbbbb;
+    text-align: center;
+}
+
+.qrcode {
+    background: #20211E;
+    color: #d9d9d9;
+    border-radius: 10px;
+    border: 2px solid #2F95A9;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.endereco{
+    background: #20211E;
+    color: #d9d9d9;
+    border-radius: 10px;
+    border: 2px solid #2F95A9;
+    padding-left: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.alerta {
+    border: 2px solid #FF0000;
+    border-radius: 10px;
+    color: #FF0000;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}

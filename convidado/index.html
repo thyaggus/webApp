@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste de Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="flex.css">
+        <script src="qrcode.js"></script>
+
+    </head>
+    <body class=" fundo-padrao">
+        <div id="frame" class="flex-container fundo-padrao">
+            <h1 class="titulo base largura-padrao">Transiente</h1>
+
+            <h2 class="nome-visitante base largura-padrao">Tiago Souza Fraga</h2>
+
+            <div id="qrcode"  class="qrcode col-12 bordas base largura-padrao"></div>
+
+            <span class="advertencia base">Mostre o código para registrar a entrada</span>
+        
+            <fieldset class="bordas base largura-padrao">
+                <legend style="color: #2F95A9">Endereço:</legend>
+                <span>Rua 20 norte, lt6 apto 1404 Aguas Claras Brasilia DF</span> 
+                <span>CEP:</span>
+                <span>71915750</span>
+            </fieldset>
+
+            <a class="link base" href="tel:+55-(041-61)-98111-3018">Ligar</a>
+
+            http://www.xvideos.com/video9645661/amateur_babe_poses_in_panties_and_fucks_on_casting
+            http://www.xvideos.com/video10710857/stunning_brunette_babe_fucked_on_casting
+            http://www.xvideos.com/video10608278/beautiful_blonde_gets_creampie_on_casting
+            http://www.xvideos.com/video13347165/tanned_amateur_bangs_to_creampie_on_casting
+
+            <span class="link base">Ver no mapa</span>
+        </div>
+
+        <script type="text/javascript">
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                    width : document.getElementById('qrcode').offsetWidth - 10,
+                    height : document.getElementById('qrcode').offsetWidth - 10
+                });
+
+            function makeCode () {		
+                qrcode.makeCode('Isso é um teste de qrcode!');
+            }
+
+            makeCode();
+        </script> 
+
+    </body>
+</html>
