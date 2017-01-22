@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    
+     
+    <script src="js/directives.js"></script>
+     
+    <script src="js/services.js"></script>
+    
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+    <style>
+        .barraTitulo { 
+            border-color: #b2b2b2;
+            background-color: #f8f8f8;
+            background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);        
+            color: #444;
+
+            border: none;
+            background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+            background-position: bottom;
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+        }
+
+        .bar-stable {
+            border-color: #b2b2b2;
+            background-color: #f8f8f8;
+            background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+            color: #444; 
+        }
+        .bar.bar-stable .title {
+            color: #444; 
+        }
+        .bar.bar-stable.bar-footer {
+            background-image: -webkit-linear-gradient(#b2b2b2, #b2b2b2 50%, transparent 50%);
+            background-image: -o-linear-gradient(#b2b2b2, #b2b2b2 50%, transparent 50%);
+            background-image: linear-gradient(#b2b2b2, #b2b2b2 50%, transparent 50%); 
+        }
+
+
+        .item-avatar {
+            padding-left: 72px;
+            min-height: 72px; 
+        }
+        .item-avatar > img:first-child,{
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            max-width: 40px;
+            max-height: 40px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; 
+        }
+
+        * {margin: 0; padding: 0;}
+
+        div {
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            width: 100%;
+        }
+
+        h3 {
+            font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+        }
+
+        li img {
+            float: left;
+            margin: 0 15px 0 0;
+        }
+
+        li {
+            padding: 10px;
+            overflow: auto;
+        }
+
+        li:hover {
+            background: #eee;
+            cursor: pointer;
+        }
+
+   
+    </style>
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+    <div class="barraTitulo">
+      <span>Autorização</span>
+    </div>
+
+
+
+
+    <div class="list">
+        <ul>
+            <li class="item-avatar item item-complex">
+                <img src="img/yVaML5G7T1e3gyeUMlKi_Jess.jpg">
+                <h2>Jess</h2>
+            </li>
+            <li class="item-avatar item item-complex">
+                <img src="img/2oqgqHUASAm1SDLlQ8tj_Alison_Carroll_6.jpg">
+                <h2>Lara</h2>
+            </li>
+            <li class="item-avatar item item-complex">
+                <img src="img/9nIuE8i4QUOVDotCdCdQ_carol4-480x479.jpg">
+                <h2>Carol</h2>
+            </li>
+        </ul>
+    </div>
+    
+  </body>
+</html>
