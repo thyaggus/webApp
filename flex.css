@@ -1,0 +1,150 @@
+
+.divExterna {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.divInterna {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+/*----------- --------------- ---------------- --------------- ------------*/
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    background: #2F95A9;
+
+    
+    border: 2px solid #2F95A9;
+
+}
+
+.nome-visitante {
+
+    border: 2px solid #2F95A9;
+}
+
+.advertencia {
+
+    font-size: 1em;
+    color: red !important;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+    border: 2px solid red;
+
+}
+
+.bordas {
+
+    border: 2px solid #2F95A9;
+}
+
+.link {
+    display: inline-block;
+    width: 45%;
+    
+    border: 2px solid #2F95A9;
+}
+
+.base {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.largura-padrao {
+    width: 100%;
+}
+
+.fundo-padrao {
+    background: black;
+}
+
+
+/*----------- --------------- ---------------- --------------- ------------*/
+
+.navigation {
+    list-style: none;
+    margin: 0; 
+
+    background: deepskyblue;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: dodgerblue;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .navigation {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+    }
+
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
